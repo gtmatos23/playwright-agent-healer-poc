@@ -6,7 +6,7 @@ export class LoginPage extends BasePage {
 
         this.usernameInput = page.locator('#email');
         this.passwordInput = page.locator('#password');
-        this.loginButton = page.getByRole('.btn-login-antigo);
+        this.loginButton = page.locator('.btn-login-antigo');
     }
 
     async acessarPagina() {
