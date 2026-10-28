@@ -1,0 +1,20 @@
+{
+    "name": "swaglabs_playwright",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "test": "npm run bdd:generate && playwright test",
+        "test:ui": "npm run bdd:generate && playwright test --project=ui",
+        "test:bdd": "npm run bdd:generate && playwright test --project=bdd-ui",
+        "test:api": "playwright test --project=api",
+        "test:headed": "playwright test --project=ui --headed",
+        "bdd:generate": "bddgen",
+        "report": "playwright show-report"
+    },
+    "devDependencies": {
+        "@faker-js/faker": "^10.6.0",
+        "@playwright/test": "^1.60.0",
+        "@types/node": "^25.9.1",
+        "playwright-bdd": "^9.2.1"
+    }
+}

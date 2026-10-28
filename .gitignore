@@ -1,0 +1,19 @@
+/.features-gen/
+
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+playwright-report/
+test-results/
+.env
+
+# Python (temporários e caches)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.log
